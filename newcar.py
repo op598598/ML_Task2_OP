@@ -37,7 +37,7 @@ why it is necessary and where it is being used in the rest of the program.
 
 
 class Car:
-    """1. This Function:"""
+    """1. This Function: This function is used to initialise the car's position on the track, initialises the car's position on the tack alongside its's orientation, draws and initialises the radars/ sensors for the car, aswell as reset variables that will be used to give rewards"""
 
     def __init__(self):
         # Load Car Sprite and Rotate
@@ -65,7 +65,7 @@ class Car:
         self.distance = 0  # Distance Driven
         self.time = 0  # Time Passed
 
-    """ 2. This Function:
+    """ 2. This Function: this function draws the sprite after it has been initialised in the previous function, aswell as giving a visualisation for the radars
     
     """
 
@@ -73,7 +73,7 @@ class Car:
         screen.blit(self.rotated_sprite, self.position)  # Draw Sprite
         self.draw_radar(screen)  # OPTIONAL FOR SENSORS
 
-    """ 3. This Function:
+    """ 3. This Function: this function uses pygame to draw the sensors on the car
     
     """
 
@@ -84,7 +84,7 @@ class Car:
             pygame.draw.line(screen, (0, 255, 0), self.center, position, 1)
             pygame.draw.circle(screen, (0, 255, 0), position, 5)
 
-    """ 4. This Function:
+    """ 4. This Function: this function uses the sensors made previously to check if the car has crashed, but assumes that the car's shape is a rectangle.
     
     """
 
@@ -97,7 +97,7 @@ class Car:
                 self.alive = False
                 break
 
-    """ 5. This Function:
+    """ 5. This Function: this function repetedly checks the x and y values of the car, then makes the car drive further along the track aslong as it has not crashed into the walls. finally it calculates how far away from the wall it is and appends that to the data list
     
     """
 
