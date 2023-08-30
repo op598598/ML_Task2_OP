@@ -1,4 +1,4 @@
-# This Code is Heavily Inspired By The YouTuber: Cheesy AI
+#  This Code is Heavily Inspired By The YouTuber: Cheesy AI
 # Code Changed, Optimized And Commented By: NeuralNine (Florian Dedov)
 # This code has again been hoisted by the CGS Digital Innovation Department
 # giving credit to the above authors for the benfit of our education in ML
