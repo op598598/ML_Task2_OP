@@ -223,7 +223,7 @@ class Car:
         return self.distance / (CAR_SIZE_X / 2)
 
     """ 10. This Function:
-    
+    this function uses pygame to rotate the car's images based off what the ML algorithm has ordered it to, then returns the rotated image on the track.
     """
 
     def rotate_center(self, image, angle):
