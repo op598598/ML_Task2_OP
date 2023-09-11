@@ -131,7 +131,7 @@ class Car:
         self.radars.append([(x, y), dist])
 
     """ 6. This Function:
-    
+    This function updates the state of the car in the simulation. It manages the car's position, speed, distance, time, and collision detection. Additionally, it calculates the object's new center and computes radar information for the object to detect obstacles or other objects in its vicinity, using a range of mathematic functions.
     """
 
     def update(self, game_map):
