@@ -237,7 +237,7 @@ class Car:
 
 
 """ This Function:
-
+first, this function sets the values of nets and cars to empty arrays. then it initialises pygame, and sets the screen to be a fullscreen image. then it uses a for loop to append as menny net(s) to the array nets as there are g in genomes. then it uses pygame to make a clock, creates text on the screen saying the generation and how many cars are alive. then it loads the map using pygame, and the map that the coder has selected to be uploaded. then it increments the generation by one (each time the function is run)/ then it uses an infinite loop to allow the player to quit out of the simulation using pygame, then changes the angle that the car is turning, based off the desire of the ML algorithm, and if it does not work, speeds the car up. then it draws the map, aswell as all of the cars that are still alive. finally, it renders all of the text that displays information about the generation and how many cars are left, aswell as hardcapping the FPS to 60
 """
 
 
