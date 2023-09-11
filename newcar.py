@@ -193,7 +193,7 @@ class Car:
             self.check_radar(d, game_map)
 
     """ 7. This Function:
-    
+    this function assigning the radars attribute of the class instance (self) to a local variable called radars.then it initializes a list called return_values with five elements, all initially set to 0. These elements will be used to store the computed distances. It then iterates over the radars list using a for loop and the enumerate function. This loop allows the function to process each radar value along with its index in the radars list. For each radar value, it divides the value by 30 (radar[1] / 30) and converts the result to an integer using the int function. The calculated integer value is then assigned to the corresponding index in the return_values list. Finally, after processing all radar values, the function returns the return_values list, which contains the computed distances to the border.
     """
 
     def get_data(self):
@@ -206,7 +206,7 @@ class Car:
         return return_values
 
     """ 8. This Function:
-    
+    this function repetedly checks if each car is alive
     """
 
     def is_alive(self):
@@ -214,7 +214,7 @@ class Car:
         return self.alive
 
     """ 9. This Function:
-    
+    this function averages the distance between self.distance, and half the car's size
     """
 
     def get_reward(self):
@@ -331,7 +331,7 @@ def run_simulation(genomes, config):
 
 
 """ 1. This Section:
-    
+    this section of the code first checks if the function is still running. then is configures the code using an external txt document. then it uses the neat module to set the genome, reproduction, species set and finally stagnation. next the population is created using the data collected from before. then, it creates the sttats, aswell as adding a range of reporter statistics to the population. finally, it runs the population, but caps it at 1000 generations
 """
 if __name__ == "__main__":
     # Load Config
